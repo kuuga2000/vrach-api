@@ -1,0 +1,38 @@
+go mod init carilokak
+go mod init tidy
+go mod vendor
+go get github.com/labstack/echo/v4
+go run server.go
+
+
+object
+  person
+  stuff
+  car
+  motorcyle
+  clean
+
+market
+
+order
+
+order_complete
+
+order_cancel
+
+order_in_process
+
+
+go get github.com/labstack/echo/v4/middleware
+go mod vendor
+
+
+//CORS opens for private domain
+e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
+  AllowOrigins: []string{"domain.tld"},
+  AllowMethods: []string{http.MethodGet, http.MethodPut, http.MethodPost, http.MethodDelete},
+}))
+
+return c.JSON(http.StatusOK, map[string]string{
+  "username": username,
+})
