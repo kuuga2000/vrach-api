@@ -1,7 +1,7 @@
 package models
 
 import (
-	"carilokak/configs"
+	"vrachapi/configs"
 )
 
 func CreateObject(object Object) (Object, error) {

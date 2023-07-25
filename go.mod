@@ -1,4 +1,4 @@
-module carilokak
+module vrachapi
 
 go 1.20
 

@@ -1,11 +1,11 @@
 package main
 
 import (
-	objectController "carilokak/cmd/objects/controllers"
-	userHandler "carilokak/cmd/users/controllers"
-	userModel "carilokak/cmd/users/models"
-	"carilokak/configs"
 	"net/http"
+	objectController "vrachapi/cmd/objects/controllers"
+	userHandler "vrachapi/cmd/users/controllers"
+	userModel "vrachapi/cmd/users/models"
+	"vrachapi/configs"
 
 	"github.com/golang-jwt/jwt/v5"
 	echojwt "github.com/labstack/echo-jwt/v4"

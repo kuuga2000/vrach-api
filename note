@@ -1,4 +1,4 @@
-go mod init carilokak
+go mod init vrachapi
 go mod init tidy
 go mod vendor
 go get github.com/labstack/echo/v4

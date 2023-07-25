@@ -1,11 +1,11 @@
 package controllers
 
 import (
-	"carilokak/cmd/users/models"
-	"carilokak/configs"
 	"fmt"
 	"net/http"
 	"time"
+	"vrachapi/cmd/users/models"
+	"vrachapi/configs"
 
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/labstack/echo/v4"

@@ -1,7 +1,7 @@
 package models
 
 import (
-	"carilokak/configs"
+	"vrachapi/configs"
 )
 
 func UserLogins(userLogin UserLogin, userLoginData UserLoginData) (UserLogin, UserLoginData, error) {

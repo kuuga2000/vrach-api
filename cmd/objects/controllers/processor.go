@@ -1,10 +1,10 @@
 package controllers
 
 import (
-	"carilokak/cmd/objects/models"
-	"carilokak/configs"
 	"fmt"
 	"net/http"
+	"vrachapi/cmd/objects/models"
+	"vrachapi/configs"
 
 	"github.com/labstack/echo/v4"
 )
