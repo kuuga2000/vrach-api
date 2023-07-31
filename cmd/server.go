@@ -18,5 +18,5 @@ func main() {
 	e.POST(configs.Version()+"/register", customerHandler.Register)
 
 	configs.InitDB()
-	e.Logger.Fatal(e.Start(":7373"))
+	e.Logger.Fatal(e.Start(":80"))
 }
