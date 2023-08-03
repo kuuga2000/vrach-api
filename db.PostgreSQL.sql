@@ -13,6 +13,7 @@
 
 --ALTER TABLE customer RENAME COLUMN data_of_birth TO date_of_birth;
 --ALTER TABLE customer ALTER COLUMN token_created_at DROP DEFAULT;
+-- ALTER TABLE customer add COLUMN nickname VARCHAR NULL DEFAULT "Customer";
 /*ALTER TABLE customer
 	ADD COLUMN username VARCHAR NOT NULL,
 	ADD COLUMN password VARCHAR NOT NULL,
