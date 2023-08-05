@@ -24,4 +24,4 @@
 	ADD COLUMN token_expired_at TIMESTAMP,
 	ADD COLUMN is_token_active INT;
 	*/
-SELECT * FROM customer;
+SELECT * FROM customer ORDER BY id DESC;

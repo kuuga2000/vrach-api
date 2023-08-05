@@ -16,13 +16,11 @@ func Register(c echo.Context) error {
 	}
 
 	message := struct {
-		Success bool           `json:"success"`
-		Message string         `json:"message"`
-		Data    model.Customer `json:"data"`
+		Success bool   `json:"success"`
+		Message string `json:"message"`
 	}{
 		Success: true,
-		Message: "Account created successfully",
-		Data:    customer,
+		Message: "Account has been created successfully",
 	}
 
 	return c.JSON(http.StatusCreated, message)
