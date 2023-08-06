@@ -1,5 +1,5 @@
 package configs
 
 func Version() string {
-	return "/api/v1"
+	return "/v1"
 }
