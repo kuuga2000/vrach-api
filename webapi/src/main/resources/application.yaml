@@ -1,0 +1,21 @@
+server:
+  port: 80
+app:
+  jwt-secret: fQbDkw72kA2Y5NwEVtewL6Gjmu8ihTuw
+app-jwt-expiration-milliseconds: 604800000
+spring:
+  datasource:
+    password: root
+    url: jdbc:postgresql://localhost:5432/vrach
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
