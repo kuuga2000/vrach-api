@@ -1,28 +1,39 @@
 package com.vrach.webapi.customer.controller;
 
 import com.vrach.webapi.customer.model.Customer;
-import com.vrach.webapi.customer.repository.CustomerRepository;
+import com.vrach.webapi.customer.service.CustomerService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import static org.springframework.http.HttpStatus.CREATED;
+
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/account")
 public class CustomerController {
 
-    private final CustomerRepository customerRepository;
+    private final CustomerService service;
 
     @GetMapping("/")
     public String hello() {
         return "Hello";
     }
-
-    @GetMapping("/account/list")
+    
+    @GetMapping("/list")
     public List<Customer> get() {
-        return customerRepository.findAll();
+        return service.list();
+    }
+
+    @PostMapping("/create")
+    public ResponseEntity<Customer> create(@RequestBody Customer customer) {
+        return new ResponseEntity<>(service.create(customer), CREATED);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void delete(@PathVariable("id") int id) {
+        service.delete(id);
     }
 }

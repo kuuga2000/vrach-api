@@ -1,15 +1,17 @@
 package com.vrach.webapi.customer.service;
 
+import com.vrach.webapi.customer.model.Customer;
+
 import java.util.List;
 import java.util.Optional;
 
-public interface CrudService<T> {
+public interface CustomerInterface<T> {
 
     List<T> list();
 
     T create(T t);
 
-    Optional<T> get(int id);
+    Optional<T> get(long id);
 
     void update(T t, int id);
 
