@@ -1,7 +1,5 @@
 package com.vrach.webapi.customer.service;
 
-import com.vrach.webapi.customer.model.Customer;
-
 import java.util.List;
 import java.util.Optional;
 

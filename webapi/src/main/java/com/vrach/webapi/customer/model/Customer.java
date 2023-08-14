@@ -25,6 +25,7 @@ public class Customer {
 
     private String nickname;
 
+    @JsonProperty("date_of_birth")
     private String dateOfBirth;
 
     private String email;
